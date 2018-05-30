@@ -1,4 +1,5 @@
 <!-- TITLE: Home -->
-<!-- SUBTITLE: A quick summary of Home -->
+<!-- SUBTITLE: You are standing in an open field west of a white house, with a boarded front door. -->
 
-# That's How the Coder Do
+# Choose Your Own Adventure
+[Computers](https://shawnswiki.herokuapp.com/computers)
