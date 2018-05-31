@@ -4,6 +4,8 @@
 # Living the Ubuntu Life
 ### To update the OS package (aka Windows Update for Ubuntu)
 
+Contrary to the hype Linux isn't magic and needs just as much tending to as the next OS. That said the process is much more straightforward.
+
 ```bash
 sudo apt update
 sudo apt upgrade
