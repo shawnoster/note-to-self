@@ -1,0 +1,145 @@
+{
+    "type": "object",
+    "required": [
+        "frames"
+    ],
+    "properties": {
+        "frames": {
+            "type": "object",
+            "patternProperties": {
+                "^[0-9a-zA-Z_-]+$": {
+                    "type": "object",
+                    "required": [
+                        "height",
+                        "width",
+                        "annotation_ids",
+                        "metadata"
+                    ],
+                    "properties": {
+                        "image_url": {
+                            "type": "string"
+                        },
+                        "height": {
+                            "type": "integer"
+                        },
+                        "width": {
+                            "type": "integer"
+                        },
+                        "sequence_position": {
+                            "type": "any"
+                        },
+                        "annotation_ids": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "metadata": {
+                            "type": "object",
+                            "patternProperties": {
+                                "^[0-9a-zA-Z_-]+$": {
+                                    "type": "array"
+                                }
+                            },
+                            "additionalProperties": false
+                        }
+                    }
+                }
+            },
+            "additionalProperties": false
+        },
+        "annotations": {
+            "type": "object",
+            "patternProperties": {
+                "[0-9]+$": {
+                    "type": "object",
+                    "required": [
+                        "frame_id",
+                        "label",
+                        "metadata",
+                        "geometry_type",
+                        "group_ids"
+                    ],
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "frame_id": {
+                            "type": "string",
+                            "pattern": "[0-9]+$"
+                        },
+                        "label": {
+                            "type": "string"
+                        },
+                        "geometry_type": {
+                            "type": "string",
+                            "enum": [
+                                "polygon",
+                                "box",
+                                "point",
+                                "cuboid",
+                                "line",
+                                "segmentation",
+                                "arrow",
+                                "ellipse",
+                                "3d_cuboid",
+                                "empty_reserved"
+                            ]
+                        },
+                        "group_id": {
+                            "type": "string",
+                            "pattern": "[0-9]+$"
+                        },
+                        "group_ids": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "pattern": "[0-9]+$"
+                            }
+                        },
+                        "metadata": {
+                            "type": "object",
+                            "patternProperties": {
+                                "^[0-9a-zA-Z_-]+$": {
+                                    "type": "any"
+                                }
+                            },
+                            "additionalProperties": false
+                        },
+                        "_mty": {
+                            "type": "object"
+                        }
+                    },
+                    "patternProperties": {
+                        "^(polygon|box|point|cuboid|line|segmentation|arrow|ellipse|3d_cuboid|empty_reserved)$": {
+                            "type": "object"
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            },
+            "additionalProperties": false
+        },
+        "groups": {
+            "type": "object",
+            "patternProperties": {
+                "[0-9]+$": {
+                    "type": "object",
+                    "required": [
+                        "annotation_ids"
+                    ],
+                    "properties": {
+                        "annotation_ids": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "pattern": "[0-9]+$"
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
