@@ -17,7 +17,7 @@
 * Telegram (_best IM ever, why doesn't everyone use it?_)
 * Wox (_muscle memory has set in, just install it so you don't leave your Alt-Spacebar hanging_)
 * Everything (_rarely use it but Wox is grumpy without it and comes in handy now and then_)
-* Windows Terminal (_sexy terminal, a bit buggy and randomly sluggish but everyone loves an underdog_)
+* Windows Terminal (_Microsoft nailed the terminal_)
 * Ubuntu (_you can have the best of both worlds_)
 * HoneyView (_only looks like a desktop app from the mid-90s a little_)
 * Node (_you're going to need it eventually, might as well get it over with_)
@@ -25,5 +25,5 @@
 * Github Desktop (_because I'm lazy and don't believe anyone can really make sense of the standard diff spew_)
 * 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTczMDY2NV19
+eyJoaXN0b3J5IjpbLTQ3MDc4NTgxXX0=
 -->
